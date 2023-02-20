@@ -131,7 +131,7 @@ console.log("Mi edad es igual a la de mi compa: ") + console.log(miEdad=compaEda
     soyMayor = "Soy mayor de edad";
 }
 
-console.log("Soy mayor de edad: ") + console.log(miEdad>18)   ; */
+console.log("Soy mayor de edad: ") + console.log(miEdad>18)   ; 
 
 
 edadPersona = prompt("Inserte su edad");
@@ -143,5 +143,20 @@ if (edadPersona>6 && alturaPersona>=120){
     puedeSubir=false;
 }
 
-console.log("Puede subir a los autitos chocadores : ") + console.log(puedeSubir) ;
+console.log("Puede subir a los autitos chocadores : ") + console.log(puedeSubir) ;*/
+
+
+
+pasePersona = prompt("¿Qué tipo de pase tiene?");
+saldoPersona = prompt("¿Cuánto saldo posee?");
+
+
+if (pasePersona== "VIP"||saldoPersona>1000){
+    puedePasar = "La persona puede pasar y posee un saldo de "+ saldoPersona + " pesos.";
+    console.log(puedePasar);    
+    
+}else{
+    console.log("No puede pasar");
+}
+
 
