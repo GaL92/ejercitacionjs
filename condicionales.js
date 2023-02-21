@@ -55,7 +55,7 @@ if(unNumero[i]==unNumero[i+1]||unNumero[i]==unNumero[i+2]||unNumero[i+1]==unNume
 
 //Ejercicio 5 (PREGUNTAR)
 
-persona1={
+/* persona1={
     nombre:"Jaqueline",
     edad:37,
     altura:160,
@@ -81,4 +81,101 @@ if (persona1.altura>persona2.altura){
 }else{
     console.log(persona2.nombre + " es mayor en edad que "+ persona1.nombre)
 }
+ */
+
+//Ejercicio 6
+
+/* miNombre = prompt("Ingresa tu nombre");
+miEdad = prompt("Ingresa tu edad");
+miAltura = prompt("Ingresa tu altura en cm");
+miVision = prompt("En un nivel del 1-10 ¿cómo calificas tu visión?")
+
+if (miEdad>=18&&miAltura>150&&miVision>=8){
+    console.log("Está capacitadx para manejar un automóvil.")
+} */
+
+//Ejercicio 7
+
+/* let nombre = prompt("Ingrese su nombre");
+let pase = prompt("¿Qué tipo de pase tiene?");
+let entrada = prompt("¿Tiene entrada? Responder: si o no");
+let si = true;
+let no = false;
+
+if (nombre == "Gabriela" || nombre == "gabriela" || pase == "vip"||pase == "Vip"){
+    console.log("Bienvenidx, puede pasar.")
+}else if(entrada == "si"){
+    rtaEntrada= prompt("¿Desea utilizarla? Responder: si o no");
+    if (rtaEntrada == "si"){
+        console.log("Bienvenidx, puede pasar.")
+    }  
+}else{
+    comprar = prompt("¿Desea comprar la entrada? Responder si o no");
+    if (comprar == "si"){
+        dinerodisponible = prompt("Ingresar dinero disponible");
+        if (dinerodisponible>=1000){
+            console.log("Puede comprar la entrada. Bienvenidx, puede pasar.")
+        }else{
+            console.log("Lo siento, no tiene dinero disponible para comprar la entrada de ingreso. ")
+        }
+
+    }else{
+        console.log("¡Oh!será en otra oportunidad. Hasta luego. ")
+    }
+} */
+
+
+//Ejercicio 8
+numeroIncognita= 9;
+
+numeroIngresado = prompt("¿En qué número del 1 al 10 estoy pensando");
+
+if (numeroIngresado==numeroIncognita){//primer intento
+    console.log("¡FELICIDADES!¡El número ingresado es correcto!");
+    }else if (numeroIngresado<numeroIncognita&&1<=numeroIngresado){
+                console.log("El número ingresado es menor que la incógnita, vuelve a intentarlo");
+                numeroIngresado=prompt("Ingresa tu segundo intento. ");   
+                if (numeroIngresado==numeroIncognita){
+                    console.log("¡FELICIDADES!¡El número ingresado es correcto!");
+                    }else if (numeroIngresado<numeroIncognita){ //segundo intento menor
+                        console.log("El numero ingresado es menor que la incógnita, vuelve a intentarlo");
+                        numeroIngresado=prompt("Ingresa tu segundo intento. "); //tercer intento
+                        if (numeroIngresado==numeroIncognita){
+                            console.log("¡FELICIDADES!¡El número ingresado es correcto!");
+                        }else{
+                            console.log("El número ingresado es incorrecto. Será en otra oportunidad (:");
+                        }}else { //segundo intento mayor
+                            console.log("El numero ingresado es mayor que la incógnita, vuelve a intentarlo");
+                            numeroIngresado=prompt("Ingresa tu tercer intento. "); //tercer intento
+                            if (numeroIngresado==numeroIncognita){
+                                console.log("¡FELICIDADES!¡El número ingresado es correcto!");
+                            }else{
+                                console.log("El número ingresado es incorrecto. Será en otra oportunidad (:");
+                            }}} else if (numeroIngresado>numeroIncognita&&numeroIngresado<=10){
+                                    console.log("El numero ingresado es mayor que la incógnita, vuelve a intentarlo");
+                                    numeroIngresado=prompt("Ingresa tu segundo intento. ");   
+                                    if (numeroIngresado==numeroIncognita){
+                                        console.log("¡FELICIDADES!¡El número ingresado es correcto!");
+                                        }else if (numeroIngresado<numeroIncognita){ //segundo intento menor
+                                            console.log("El numero ingresado es menor que la incógnita, vuelve a intentarlo");
+                                            numeroIngresado=prompt("Ingresa tu segundo intento. "); //tercer intento
+                                            if (numeroIngresado==numeroIncognita){
+                                                console.log("¡FELICIDADES!¡El número ingresado es correcto!");
+                                            }else{
+                                                console.log("El número ingresado es incorrecto. Será en otra oportunidad (:");
+                                            }}else { //segundo intento mayor
+                                                console.log("El numero ingresado es mayor que la incógnita, vuelve a intentarlo");
+                                                numeroIngresado=prompt("Ingresa tu segundo intento. "); //tercer intento
+                                                if (numeroIngresado==numeroIncognita){
+                                                    console.log("¡FELICIDADES!¡El número ingresado es correcto!");
+                                                }else{
+                                                    console.log("El número ingresado es incorrecto. Será en otra oportunidad (:");
+                                                }}}else{
+                                                    alert("Debe ingresar un número entre el 1 y el 10")
+                                                }
+
+                    
+
+                
+        
 
